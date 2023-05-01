@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../../styles/styles.module.css'
 
-const baseURL = "https://jsonplaceholder.typicode.com/users"
+const baseURL = "https://jsonplaceholder.typicode.com/users/"
 
 export const User = ({userId}) => {
     const [user, setUser] = useState ({name:"", email:""});
@@ -12,31 +12,26 @@ export const User = ({userId}) => {
         setLoading(true);
         
         const url = `${baseURL}${userId}`
-        console.log("url", url)
+        //console.log("url", url)
         const user = await fetch(url)
         const userToJson = await user.json();
-        console.log("userToJson", userToJson)
-        
+        // console.log("userToJson", userToJson)
+        setUser(userToJson)
         
         setLoading(false);
     }
 
     useEffect(() => {
         getUserData()
-    }, []
+    }, [userId]
     )
 
     return (
         <div>
-            <h3>user</h3>
-            <p>{userId}</p>
 
             {loading ?
                 <p>Cargando datos...</p>
-                : <ul>
-                    <li>user</li>
-                    {/* {user.map((item) => <li key={item.id}>{item.name}</li>)} */}
-                </ul>
+                : user && <p><strong>User {user.id}: </strong><span>{user.name}</span></p>
             }
         </div>
     )
