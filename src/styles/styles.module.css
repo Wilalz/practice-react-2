@@ -1,0 +1,222 @@
+:root {
+  --border-color: #cccaca;
+}
+
+.toDo {
+  color: red;
+  font-size: 0,7em;
+}
+
+h2 {
+    font-size: 3em;
+  }
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 10px;
+  margin: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #cccccc;
+}
+button:hover {
+  border-color: #646cff;
+}
+
+.container {
+  border: var(--border-color) solid 1px;
+  padding: 30px;
+}
+
+.card {
+  border: var(--border-color) solid 1px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.containerFlex {
+  border: var(--border-color) solid 1px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardFlex {
+  border: var(--border-color) solid 1px;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  width: 10em;
+}
+
+
+.quantity {
+  margin: 2px;
+}
+
+/* Ejercio 2 - elephans */
+
+.cardPpal {
+  display: flex;
+  /* justify-content: center; */ /* para centar horizontalmente */
+  align-items: center;   /* para centrar verticalmente */
+  flex-direction: column;
+  border: var(--border-color) solid 1px;
+}
+
+
+.btnCount {
+  /* border: rgb(46, 160, 11) solid ; */
+  padding: 20px;
+  display: inline-block;
+  margin: 10px;
+}
+
+
+.cardLikes {
+  /* border: rgb(0, 38, 255) solid; */
+  width: 150px;
+  height: 80px;
+  background-color: aquamarine;
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 0px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.cardLikes .quantity{
+  /* border: rgb(255, 0, 234) solid; */
+  font-size: 30px;
+}
+
+.cardLikes span{
+  /* border: rgb(255, 0, 234) solid; */
+  font-size: 40px;
+}
+
+
+/* Ejercio 3 - coche */
+.cardCoche {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  border: var(--border-color) solid 1px;
+
+}
+
+
+.carState {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 15px;
+  margin: 10px;
+  padding-right: 30px;
+
+}
+
+.carState .state {
+  color: red;
+}
+.carState .stateEncendido {
+  color: blue;
+}
+
+
+
+/* Ejercicio 4 - Agregar articulos a una lista */
+.itemList {
+  background-color: rgb(224, 238, 245);
+  border: solid rgb(120, 166, 187) 1px;
+  border-radius: 3px;
+}
+
+
+
+/* Ejercicio 6 - Formulario de login */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+input {
+  height: 2rem;
+  margin: 5px;
+  width: 20rem;
+
+}
+
+/* Ejercicio 7 - Formulario rejuvenecedor */
+
+.buttonBlue {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  background: rgb(0,140,255);
+}
+
+
+.buttonBlue:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 15px rgb(54, 165, 255),
+              0 0 40px rgb(146, 255, 231);
+}
+
+
+.error_msg {
+  color: red;
+}
+
+/* Ejercicio 10 - Formulario y tabla de califiaciones */
+
+
+.select{
+  height: 40px;
+  width: 40%;
+}
+
+#input_nota{
+  height: 50px;
+  width: 20%;
+}
+
+.line_title {
+  width: 100%;
+}
+
+th,
+tr,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+
+/* Ejercicio 11 - Formulario Teacher */
+.cardDatos{
+  background-color: palegreen;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 80px;
+}
+
+
+/*  Ejercio 1. Rick and Morty */
+
+#card_rick{
+  height: 695px;
+}
