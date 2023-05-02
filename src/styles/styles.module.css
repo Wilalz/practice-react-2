@@ -222,6 +222,10 @@ td {
   height: 695px;
 }
 
+.listas_simples {
+  list-style-type: none;
+}
+
 /**  Ejercico 3 . Post desde Api*/
 
 .containerFlex {
@@ -278,3 +282,10 @@ td {
   align-items: center;
 }
 
+
+/*   Barra de navegacion   */
+
+.nav{
+  background-color: #f2f7ed;
+  border: var(--border-color) solid 1px;
+}

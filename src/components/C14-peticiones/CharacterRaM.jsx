@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import styles from '../../styles/styles.module.css'
+
 let apiRickAndMorty = "https://rickandmortyapi.com/api/character/?page=1";
+
 
 export const CharacterRaM = () => {
 // 1. definir los estados
@@ -56,7 +59,7 @@ export const CharacterRaM = () => {
             {/* finalmente hace un map para recorrrer el estado "lista" que ya tiene la data cargada, y genera un li con la informacion del nombre, recordar definir el atributo key a cada elemento*/}
             {loading ?
                 <p>Cargando datos...</p>
-                : <ul>
+                : <ul className={styles.listas_simples}>
                     {lista.map((item) => <li key={item.id}>{item.name}</li>)}    
                 </ul>
             }
